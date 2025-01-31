@@ -1,24 +1,26 @@
 interface Numbers {
-    a: number,
-    b: number,
+    a: number;
+    b: number;
 }
-//fix by object return
 
-function swapnumberbytemp(a: number, b: number): Numbers {
+// Function 1: Swap using a temporary variable
+function swapTemp(a: number, b: number): Numbers {
     let temp = a;
     a = b;
     b = temp;
     console.log(`a: ${a} and b: ${b}`);
-    return { a, b }
+    return { a, b };
 }
-swapnumberbytemp(2, 4);
 
-//fix by array object return
-function swapnumber(a: number, b: number): Numbers[] {
+swapTemp(2, 4); // Output: a: 4 and b: 2
+
+// Function 2: Swap using arithmetic operations
+function swapArithmetic(a: number, b: number): Numbers {
     a = a + b;
     b = a - b;
     a = a - b;
     console.log(`a: ${a} and b: ${b}`);
-    return [{ a, b }]
+    return { a, b };
 }
-swapnumber(2, 4);
+
+swapArithmetic(3, 4); // Output: a: 4 and b: 2
