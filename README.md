@@ -62,3 +62,21 @@ Step 2: Clearly states that two numbers should be taken as input.
 Step 3: Uses an exact mathematical operation (+).
 Step 4: Explicitly instructs to display the result.
 Each step is precisely defined, well-structured, and free of ambiguity, ensuring correct execution. 🚀
+
+===================================== swap two number algorithms =========================
+1️⃣ Start
+2️⃣ Input two numbers (a and b).
+3️⃣ Store a in a temporary variable: temp = a.
+4️⃣ Assign b to a: a = b.
+5️⃣ Assign temp to b: b = temp.
+6️⃣ Display swapped values.
+7️⃣ Stop
+
+Alternative (Without Temp Variable)
+1️⃣ Start
+2️⃣ Input two numbers (a and b).
+3️⃣ a = a + b
+4️⃣ b = a - b
+5️⃣ a = a - b
+6️⃣ Display swapped values.
+7️⃣ Stop
